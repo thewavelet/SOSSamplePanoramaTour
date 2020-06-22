@@ -21,3 +21,7 @@ var sharedBlacklist = [
   /heapCapture\/bundle\.js/,
   /.*\/__tests__\/.*/
 ];
+
+## npm start 후에 브라우저 에서 http://localhost:8081/index.html 접속
+
+ 
