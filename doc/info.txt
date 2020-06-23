@@ -1,0 +1,9 @@
+Signed Distance Function fonts
+
+smoothly render text at any size, without pixelation
+
+One downside is that the technique requires us to pre-render font glyphs before shipping them
+
+The default glyphs set contains Roman and Cyrillic characters, but nothing beyond that.
+
+

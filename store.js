@@ -21,7 +21,7 @@ export function changeRoom(roomSelection) {
     State.info = house[`${roomSelection}`].info;
     State.adjacentRooms = house[`${roomSelection}`].adjacentRooms;
 
-    Environment.setBackgroundImage(asset(`./360_${house[`${roomSelection}`].img}`));
+    Environment.setBackgroundImage(asset(`./${house[`${roomSelection}`].img}`));
 
     updateComponents();
 }
@@ -45,9 +45,9 @@ export function connect(Component) {
         componentWillMount() {
             if (this.state.room === '') {
                 this.setState({
-                    room: house.House.roomName,
-                    info: house.House.info,
-                    adjacentRooms: house.House.adjacentRooms
+                    room: house.CONFERENCE_ROOM.roomName,
+                    info: house.CONFERENCE_ROOM.info,
+                    adjacentRooms: house.CONFERENCE_ROOM.adjacentRooms
                 })
             }
         }
